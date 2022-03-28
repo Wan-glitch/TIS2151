@@ -1,4 +1,6 @@
-			<form id="login_form1" class="form-signin" method="post">
+<link href="https://mmls2.mmu.edu.my/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<style type="text/css">@font-face { font-family: Roboto; src: url("chrome-extension://mcgbeeipkmelnpldkobichboakdfaeon/css/Roboto-Regular.ttf"); }</style>
+				<form id="login_form1" class="form-signin" method="post">
 						<h3 class="form-signin-heading"><i class="icon-lock"></i> Sign in</h3>
 						<input type="text" class="input-block-level" id="username" name="username" placeholder="Username" required>
 						<input type="password" class="input-block-level" id="password" name="password" placeholder="Password" required>
@@ -8,7 +10,7 @@
 															$('#signin').tooltip('show');
 															$('#signin').tooltip('hide');
 														});
-														</script>		
+														</script>
 			</form>
 						<script>
 						jQuery(document).ready(function(){
@@ -40,13 +42,14 @@
 							});
 						});
 						</script>
+
 			<div id="button_form" class="form-signin" >
 			New to CHMSC OLMS
 			<hr>
 				<h3 class="form-signin-heading"><i class="icon-edit"></i> Sign up</h3>
-				<button data-placement="top" title="Sign In as Student" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-info" type="submit">I`m a Student</button>
+				<button data-placement="top" title="Sign In as Student" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-info" type="submit">Student</button>
 				<div class="pull-right">
-					<button data-placement="top" title="Sign In as Teacher" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-info" type="submit">I`m a Teacher</button>
+					<button data-placement="top" title="Sign In as Teacher" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-info" type="submit">Teacher</button>
 				</div>
 			</div>
 														<script type="text/javascript">

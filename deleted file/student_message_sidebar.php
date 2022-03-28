@@ -16,13 +16,7 @@
 			$count_message = mysqli_num_rows($message_query);
 			?>
 			<li class="active">
-			<a href="student_message.php"><i class="icon-chevron-right"></i><i class="icon-envelope-alt"></i>&nbsp;Message
-				<?php if($count_message == '0'){
-				}else{ ?>
-					<span class="badge badge-important"><?php echo $count_message; ?></span>
-				<?php } ?>
-			</a>
-			</li>
+
 			 <li class=""><a href="backpack.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Backpack</a></li>
 		</ul>
 					<?php /* include('search_other_class.php');  */?>	

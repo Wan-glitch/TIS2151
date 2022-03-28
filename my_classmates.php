@@ -34,7 +34,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-									<ul	 id="da-thumbs" class="da-thumbs">
+									<ul	 id="da-thumbs" class="w3-ul w3-hoverable">
 										    <?php
 										 
 										 
