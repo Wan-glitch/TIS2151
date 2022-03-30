@@ -20,6 +20,9 @@
 								<a href="teachers.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Teachers</a>
 							</li>
 							<li>
+                            	<a href="supervisors.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Supervisors</a>
+                        	</li>
+							<li>
 								<a href="downloadable.php"><i class="icon-chevron-right"></i><i class="icon-download"></i> Downloadable Materials</a>
 							</li>
 							<li  class="active">
