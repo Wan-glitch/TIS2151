@@ -14,7 +14,7 @@
 						<div class="span8">
 						
 								<div class="title">
-							<p class="chmsc">Carlos Hilado Memorial State College - Talisay</p>
+							<p class="chmsc">Multimedia University</p>
 							<h3>
 
 							<p>M - Learning</p>
@@ -30,7 +30,7 @@
 						<div class="span12">
 						<br>
 								<div class="motto">
-												<p>CHMSC EXCELS:</p>
+												<p>MMU EXCELS:</p>
 												<p>Excellence, Competence and Educational</p>
 												<p>Leadership in Science and Technology</p>
 								</div>		
