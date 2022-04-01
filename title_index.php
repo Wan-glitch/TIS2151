@@ -15,7 +15,7 @@
 				        <div class="title">
 				            <p class="chmsc">Multimedia University</p>
 				            <h3>
-				                <p>M - Learning</p>
+				                <p> FYP</p>
 				            </h3>
 				        </div>
 
@@ -27,9 +27,9 @@
 				    <div class="span12">
 				        <br>
 				        <div class="motto">
-				            <p>MMU EXCELS:</p>
-				            <p>Excellence, Competence and Educational</p>
-				            <p>Leadership in Science and Technology</p>
+				            <p>MMU:</p>
+				            <p>Excellence, Competence and Educational (Change)</p>
+				            <p>Leadership in Science and Technology (Change) </p>
 				        </div>
 				    </div>
 				</div>
