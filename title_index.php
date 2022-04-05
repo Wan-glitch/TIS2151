@@ -28,8 +28,7 @@
 				        <br>
 				        <div class="motto">
 				            <p>MMU:</p>
-				            <p>Excellence, Competence and Educational (Change)</p>
-				            <p>Leadership in Science and Technology (Change) </p>
+				            <p>Inquire, inspire and innovate</p>
 				        </div>
 				    </div>
 				</div>
