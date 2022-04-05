@@ -15,7 +15,7 @@
 				        <div class="title">
 				            <p class="chmsc">Multimedia University</p>
 				            <h3>
-				                <p> FYP</p>
+				                <p>Final Year Project</p>
 				            </h3>
 				        </div>
 
