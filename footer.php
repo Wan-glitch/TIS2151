@@ -1,6 +1,7 @@
 <center>
-		<footer>
+    <footer>
+
+        <p>Final Year Project Monitoring and Management System</p>
 		
-		<p>MMU</p>
-		</footer>
+    </footer>
 </center>

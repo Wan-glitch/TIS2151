@@ -1,5 +1,4 @@
 body { 
-	background: url(../../images/index.jpg) no-repeat center center fixed;
 	-webkit-background-size: cover !important; 
 	-moz-background-size: cover !important; 
 	-o-background-size: cover !important; 
@@ -74,6 +73,10 @@ body {
     font-size: 19px;
     margin-bottom: 10px;
 }
+
+
+
+
 .title_index {
     margin-top: -43px;
 }

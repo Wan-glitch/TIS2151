@@ -15,7 +15,7 @@ var $link;
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
-
+        
     }
     function __destruct() {
         // var_dump($this->link);

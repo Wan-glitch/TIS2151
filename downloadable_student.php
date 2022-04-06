@@ -113,6 +113,7 @@
                         <!-- /block -->
                     </div>
                 </div>
+				<?php include('downloadable_sidebar_student.php'); ?>
             </div>
 		<?php include('footer.php'); ?>
         </div>

@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-	<title>MMU FYP MM</title>
-		<meta name="description" content="Management and Monitoring of Final Year Projects">
-		<meta name="keywords" content="MMU, MMUFYP,FYPMM,FYP">
+        <title>FYP Monitoring and Management</title>
+
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
 				<link href="admin/images/favicon.ico" rel="icon" type="image">
@@ -16,7 +15,7 @@
 				<!-- calendar css -->
 				<link href="admin/vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen">
 				<!-- index css -->
-				<link href="admin/bootstrap/css/index.css" rel="stylesheet" media="screen"/>
+				<link href="admin/bootstrap/css/script.css" rel="stylesheet" media="screen"/>
 				<!-- data table css -->
 				<link href="admin/assets/DT_bootstrap.css" rel="stylesheet" media="screen"/>
 				<!-- notification  -->

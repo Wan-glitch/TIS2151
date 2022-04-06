@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html class="no-js">
     <head>
-        <title>MMU FYP MM</title>
-		<meta name="description" content="Management and Monitoring of Final Year Projects">
-		<meta name="keywords" content="MMU, MMUFYP,FYPMM,FYP">
+        <title>FYP Monitoring</title>
 		<meta charset="UTF-8">
         <!-- Bootstrap -->
 		<link href="admin/images/favicon.ico" rel="icon" type="image">
@@ -18,10 +16,6 @@
 		<link href="admin/vendors/fullcalendar/fullcalendar.css" rel="stylesheet" media="screen">
 		<!-- index css -->
         <!-- <link href="admin/bootstrap/css/index.css" rel="stylesheet" media="screen"> -->
-        <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-        <!--[if lt IE 9]>
-            <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-        <![endif]-->
 		<script src="admin/vendors/jquery-1.9.1.min.js"></script>
         <script src="admin/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 		<!-- data table -->

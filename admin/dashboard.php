@@ -20,13 +20,13 @@
 							        <div class="span12">
 						
 									<?php 
-								$query_reg_supervisor = mysqli_query($conn,"select * from supervisor where supervisor_status = 'Registered' ")or die(mysqli_error());
-								$count_reg_supervisor = mysqli_num_rows($query_reg_supervisor);
+								$query_reg_teacher = mysqli_query($conn,"select * from teacher where teacher_status = 'Registered' ")or die(mysqli_error());
+								$count_reg_teacher = mysqli_num_rows($query_reg_teacher);
 								?>
 								
                                 <div class="span3">
-                                    <div class="chart" data-percent="<?php echo $count_reg_supervisor; ?>"><?php echo $count_reg_supervisor; ?></div>
-                                    <div class="chart-bottom-heading"><strong>Registered Supervisor</strong>
+                                    <div class="chart" data-percent="<?php echo $count_reg_teacher; ?>"><?php echo $count_reg_teacher; ?></div>
+                                    <div class="chart-bottom-heading"><strong>Registered Teacher</strong>
 
                                     </div>
                                 </div>
@@ -126,7 +126,7 @@
                 </div>
             </div>
     
-         <?php include('footer.php'); ?>
+         
         </div>
 	<?php include('script.php'); ?>
     </body>
