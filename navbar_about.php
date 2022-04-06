@@ -5,7 +5,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</a>
-                   <a class="brand" href="#">Welcome to: FYP Monitoring and Management</a>
+                   <a class="brand" href="#">Welcome to: Management and Monitoring of Final Year Projects</a>
 							<div class="nav-collapse collapse">
 								<ul class="nav pull-right">
 	

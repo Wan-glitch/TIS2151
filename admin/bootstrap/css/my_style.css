@@ -186,12 +186,11 @@ body {
 
 }
 #login .form-signin{
-	background: url("../../images/pixel-60fff.png") repeat scroll 0 0 rgba(0, 0, 0, 0) !important;
 	-webkit-box-shadow: 2px 2px 5px rgba(0, 0, 6, 0.75) !important;
 	-moz-box-shadow:    2px 2px 5px rgba(0, 0, 6, 0.75) !important;
 	box-shadow:         2px 2px 5px rgba(0, 0, 6, 0.75) !important;
     box-shadow: 0 1px 3px rgba(15, 15, 15, 0.2) !important;
-
+	background-color: #e0e0eb;
 }
 .navbar .divider-vertical {
     border-left: 0 solid #F2F2F2 !important;
@@ -214,7 +213,7 @@ footer{
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25) !important;
 }
 .btn{
-    border-radius: 0 0 0 0 !important;
+    border-radius: 12px !important;
 }
 .btn-info{
 	background-color: #3B5998 !important; 
@@ -242,3 +241,4 @@ footer{
 .classmate_cursor{
 	pointer-events: none;
 }
+

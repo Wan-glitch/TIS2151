@@ -13,7 +13,10 @@
 				    <div class="span8">
 
 				        <div class="title">
-
+				            <p class="chmsc">Multimedia University</p>
+				            <h3>
+				                <p>Final Year Project</p>
+				            </h3>
 				        </div>
 
 				    </div>
