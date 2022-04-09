@@ -5,71 +5,6 @@ body {
 	-o-background-size: cover !important; 
 	background-size: cover !important; 
 }
-@font-face
-{
-	font-family: 'hetilica';
-	src: url('hetilica.ttf');
-}
-/* iPad [portrait + landscape] */
-			@media only screen and (min-width: 768px) and (max-width: 1024px) {
-						.title h3 {
-			color: #fff;
-			font-size: 30px !important;
-			margin: auto 0;
-			padding: 20px;
-			text-align: left;
-		}
-		}
-/* Smartphones (portrait and landscape) ----------- */
-	@media only screen 
-	and (min-width : 320px) 
-	and (max-width : 480px) {
-		.index_logo {
-			height: 94px;
-			margin-left: 77px;
-	margin-top: 95px;
-		}
-.title {
-    margin: -146px auto !important;
-    position: absolute;
-}
-		.chmsc{
-			display:none;
-		}
-		.title h3 {
-			color: #fff;
-			font-size: 34px !important;
-			margin: auto 0;
-			padding: 20px;
-			text-align: left;
-		}
-		.motto{
-			display:none;
-		}
-		.title_index .span12{
-			display:none;
-		}
-		
-		#login .form-signin:first-child {
-			background: url("../../images/pixel-60fff.png") repeat scroll 0 0 rgba(0, 0, 0, 0);
-			box-shadow: 0 1px 3px rgba(15, 15, 15, 0.2);
-			float: none;
-			margin-top: 0px !important;
-		}
-		.chmsc {
-			font-size: 10px !important;
-		}
-		#login .form-signin {
-			background-color: #FFFFFF;
-			border: 1px solid #E5E5E5;
-			border-radius: 5px;
-			box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
-			margin: 0 auto 20px;
-			max-width: 300px;
-			padding: 19px 18px 29px;
-		}
-	
-	}
 #login .form-signin .form-signin-heading, #login .form-signin .checkbox {
     font-size: 19px;
     margin-bottom: 10px;
@@ -108,11 +43,12 @@ body{
 	margin:25px auto;
 }
 .title h3 {
-	color:#fff;
+    color: #FFFFFF;
     padding: 20px;
 	margin:auto 0;
-	font-size: 50px;
+	font-size: 30px;
 	text-align: left;
+	text-shadow: 1px 1px 5px rgba(0, 0, 0, 1);
 }
 .title h3 p {
     margin-top: -10px;

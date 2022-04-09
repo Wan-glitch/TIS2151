@@ -64,7 +64,7 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
         //Determine the path to which we want to save this file      
         //$newname = dirname(__FILE__).'/upload/'.$filename;
         $newname = "admin/uploads/" . $rd2 . "_" . $filename;
-		$name_notification  = 'Add Downloadable Materials file name'." ".'<b>'.$name.'</b>';
+		$name_notification  = 'Add Materials Materials file name'." ".'<b>'.$name.'</b>';
         //Check if the file with the same name is already exists on the server
         if (!file_exists($newname)) {
             //Attempt to move the uploaded file to it's new place

@@ -9,12 +9,12 @@
 					<span class="badge badge-important"><?php echo $not_read; ?></span>
 				<?php } ?>
 		</a></li>
-		<li class=""><a href="teacher_downloaded.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Downloaded Materials</a></li> 
+		<li class="active"><a href="teacher_downloaded.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Downloaded Materials</a></li> 
 		<li class=""><a href="add_downloadable.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Materialss</a></li> 
-		<li class="active"><a href="add_announcement.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Announcement</a></li> 
+		<li class=""><a href="add_announcement.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Announcement</a></li>
 		<li class=""><a href="add_assignment.php"><i class="icon-chevron-right"></i><i class="icon-plus-sign"></i>&nbsp;Add Assignment</a></li> 
 		<li class=""><a href="teacher_quiz.php"><i class="icon-chevron-right"></i><i class="icon-list"></i>&nbsp;Quiz</a></li>
-		<li class=""><a href="teacher_share.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>&nbsp;Shared Files</a></li>	
+		<li class=""><a href="teacher_share.php"><i class="icon-chevron-right"></i><i class="icon-file"></i>&nbsp;Shared Files</a></li>
 	</ul>
 	<?php include('search_other_class.php'); ?>	
 </div>

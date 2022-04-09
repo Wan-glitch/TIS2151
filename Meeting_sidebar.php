@@ -36,7 +36,7 @@
 										</div>
 										
 										<div class="span4">
-												<?php include('add_class_event_student.php'); ?>
+												<?php include('add_class_event.php'); ?>
 										</div>	
 							<!-- block -->
 						

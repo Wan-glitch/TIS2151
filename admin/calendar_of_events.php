@@ -29,7 +29,7 @@
                 </div>
             </div>
     
-
+         <?php include('footer.php'); ?>
         </div>
 	<?php include('script.php'); ?>
 	<?php include('admin_calendar_script.php'); ?>

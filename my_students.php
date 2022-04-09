@@ -36,15 +36,7 @@
 														$id = $row['teacher_class_student_id'];
 														?>
 											<li id="del<?php echo $id; ?>">
-													<a href="#">
-															<img id="student_avatar_class" src ="admin/<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
-														<div>
-														<span>
-														<p><?php ?></p>
-														
-														</span>
-														</div>
-													</a>
+
 													<p class="class"><?php echo $row['lastname'];?></p>
 													<p class="subject"><?php echo $row['firstname']; ?></p>
 													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Remove</a>	

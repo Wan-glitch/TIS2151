@@ -36,7 +36,18 @@ jQuery(document).ready(function() {
                     setTimeout(function() {
                         window.location = 'dasboard_teacher.php'
                     }, delay);
-                } else if (html == 'true_student') {
+                } 
+                else if (html == 'true_supervisor') {
+                    $.jGrowl("Welcome to FYP Monitoring and Management system", {
+                        header: 'Login Successfully'
+                    });
+                    var delay = 1000;
+                    setTimeout(function() {
+                        window.location = 'dasboard_supervisor.php'
+                    }, delay);
+                
+                } 
+                else if (html == 'true_student') {
                     $.jGrowl("Welcome to FYP Monitoring and Management system", {
                         header: 'Login Successfully'
                     });
@@ -44,7 +55,8 @@ jQuery(document).ready(function() {
                     setTimeout(function() {
                         window.location = 'student_notification.php'
                     }, delay);
-                } else {
+                } 
+                else {
                     $.jGrowl("Please Check your username and Password", {
                         header: 'Login Failed'
                     });

@@ -9,13 +9,13 @@ var $link;
         ob_start();
   // Get the main settings from the array we just loaded
         $host = 'localhost';
-        $db = 'tis2151';
+        $db = 'newtis2151';
         $user = 'root';
         $pass = '';
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass,$db);
-        
+
     }
     function __destruct() {
         // var_dump($this->link);
@@ -26,7 +26,7 @@ function DbConnector(){
 
         // Get the main settings from the array we just loaded
         $host = 'localhost';
-        $db = 'tis2151';
+        $db = 'newtis2151';
         $user = 'root';
         $pass = '';
 
