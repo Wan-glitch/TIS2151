@@ -1,3 +1,5 @@
+<?phpinclude('session.php'); ?>
+<?php $get_id = $_GET['id']; ?>
 <form id="signin_student" class="form-signin" method="post">
     <h4 class="form-signin-heading"><i class="icon-plus-sign"></i> Add Event</h4>
     <input type="text" class="input-block-level datepicker" name="date_start" id="date01" placeholder="Date Start"
@@ -59,9 +61,10 @@ window.location = "class_calendar_student.php<?php echo '?id='.$get_id; ?>";
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
                     
                     <?php
-                        $session_id=$_SESSION['id'];
-                        //Check whether the session variable SESS_MEMBER_ID is present or not
-                        if ($_SESSION['id'] == 'student_id') {
+                        $event_query = mysqli_query($conn,"select * from event where student_id = '$get_id' ")or die(mysqli_error());
+                        while($event_row = mysqli_fetch_array($event_query))
+                            $idt  = $event_row['student_id'];
+                        if($idt===$get_id){
                             echo '<button class="btn btn-danger" name="delete_event"><i class="icon-remove icon-large"></i></button>';
                         }
 
@@ -83,4 +86,6 @@ window.location = "class_calendar_student.php<?php echo '?id='.$get_id; ?>";
 
 
     </tbody>
+
+    
 </table>

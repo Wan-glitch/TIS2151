@@ -5,8 +5,7 @@
 			<li class=""><a href="dashboard_student.php"><i class="icon-chevron-right"></i><i class="icon-group"></i>&nbsp;My Class</a></li>
 			<li class="">
 				<a href="student_notification.php"><i class="icon-chevron-right"></i><i class="icon-info-sign"></i>&nbsp;Notification</li>
-			 <li class=""><a href="backpack.php"><i class="icon-chevron-right"></i><i class="icon-suitcase"></i>&nbsp;Backpack</a></li>
 		</ul>
-		<?php/*  include('search_other_class.php'); */ ?>	
+		
 </div>
 

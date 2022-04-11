@@ -1,6 +1,14 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
+
+<style>
+	.collapse.in {
+		height: 8.5em;
+	}
+
+</style>
+
     <body>
 		<?php include('navbar_teacher.php'); ?>
         <div class="container-fluid">
@@ -29,7 +37,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-  									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
+  									<table height="10"cellpadding="0" cellspacing="0" border="0" class="table" id="">
 										<thead>
 										        <tr>
 												<th>Date Upload</th>
