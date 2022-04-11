@@ -19,8 +19,9 @@
 			<div class="span6"><div class="pull-right"><?php include('login_form.php'); ?></div></div>
 		</div>
 		<div class="row-fluid">
-			<div class="span12"><div class="index-footer"><?php include('link.php'); ?></div></div>
+			
 		</div>
+        <br>
 			<?php include('footer.php'); ?>
     </div>
 <?php include('script.php'); ?>

@@ -7,7 +7,7 @@
                                 <div class="span12">
 								<form method="post" action="search_class.php">	
 										<div class="control-group">
-											<label>School Year:</label>
+											<label>Semester:</label>
                                           <div class="controls">
                                             <select name="school_year"  class="span8" required>
                                              	<option></option>

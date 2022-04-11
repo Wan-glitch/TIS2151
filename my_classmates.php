@@ -21,7 +21,7 @@
 					     <ul class="breadcrumb">
 							<li><a href="#"><?php echo $row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $row['subject_code']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#">School Year: <?php echo $row['school_year']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#">Semester: <?php echo $row['school_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>My Classmates</b></a></li>
 						</ul>
 						
@@ -48,10 +48,7 @@
 														?>
 														
 											<li id="del<?php echo $id; ?>">
-												<a  class="classmate_cursor" href="#">
-														<img id="student_avatar_class" src ="admin/<?php echo $row['location'] ?>" width="124" height="140" class="img-polaroid">
-													<div><span></span></div>
-												</a>
+												<p class="class"><?php echo $row['username'];?></p>
 												<p class="class"><?php echo $row['lastname'];?></p>
 												<p class="subject"><?php echo $row['firstname']; ?></p>
 											</li>

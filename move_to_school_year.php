@@ -8,7 +8,7 @@
 				
 										<center>
 										<div class="control-group">
-											<label>To what class School Year:</label>
+											<label>To what class Semester:</label>
                                           <div class="controls">
 										  	<input type="hidden" name="get_id" value="<?php echo $get_id; ?>">
                                             <select name="school_year"  class="">

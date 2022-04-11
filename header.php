@@ -7,6 +7,7 @@
         <!-- Bootstrap -->
 				<link href="admin/images/favicon.ico" rel="icon" type="image">
 				<link href="admin/bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen"/>
+				<link href="admin/bootstrap/css/index.css" rel="stylesheet" media="screen"/>
 				<link href="admin/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"/>
 				<link href="admin/bootstrap/css/font-awesome.css" rel="stylesheet" media="screen"/>
 				<link href="admin/bootstrap/css/my_style.css" rel="stylesheet" media="screen"/>
@@ -24,5 +25,10 @@
 				<link rel="stylesheet" type="text/css" href="admin/vendors/bootstrap-wysihtml5/src/bootstrap-wysihtml5.css"/>
 		<script src="admin/vendors/jquery-1.9.1.min.js"></script>
         <script src="admin/vendors/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+		<?php
+			http_response_code(404);
+			include('404.php'); // provide your own HTML for the error page
+			die();
+			?>
     </head>
 <?php include('admin/dbcon.php'); ?>

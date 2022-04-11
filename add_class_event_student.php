@@ -57,13 +57,18 @@ window.location = "class_calendar_student.php<?php echo '?id='.$get_id; ?>";
                 <form method="post" action="delete_class_event.php">
                     <input type="hidden" name="get_id" value="<?php echo $get_id; ?>">
                     <input type="hidden" name="id" value="<?php echo $id; ?>">
+                    
+                    <?php
+                        $session_id=$_SESSION['id'];
+                        //Check whether the session variable SESS_MEMBER_ID is present or not
+                        if ($_SESSION['id'] == 'student_id') {
+                            echo '<button class="btn btn-danger" name="delete_event"><i class="icon-remove icon-large"></i></button>';
+                        }
 
-					<?php 
-						if ($get_id = 'student_id'){
-							echo '<button class="btn btn-danger" name="delete_event"><i class="icon-remove icon-large"></i></button>';
-						}
-					?>
-													
+                        
+                        ?>
+
+
 					
                     
                 </form>

@@ -16,7 +16,7 @@
 								?>
 								<li><a href="#">Message</a><span class="divider">/</span></li>
 								<li><a href="#"><b>Sent Messages</b></a><span class="divider">/</span></li>
-								<li><a href="#">School Year: <?php echo $school_year_query_row['school_year']; ?></a></li>
+								<li><a href="#">Semester: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
 						 <!-- end breadcrumb -->
 					 
