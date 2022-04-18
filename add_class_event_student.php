@@ -29,7 +29,7 @@ window.location = "class_calendar_student.php<?php echo '?id='.$get_id; ?>";
 
 <table cellpadding="0" cellspacing="0" border="0" class="table" id="">
 
-    <?php include('move_to_school_year.php'); ?>
+    <?php include('move_to_term_year.php'); ?>
     <thead>
         <tr>
             <th>Event</th>
@@ -70,8 +70,6 @@ window.location = "class_calendar_student.php<?php echo '?id='.$get_id; ?>";
 
                         
                         ?>
-
-
 					
                     
                 </form>

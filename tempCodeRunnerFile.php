@@ -9,19 +9,19 @@
                 <div class="span9" id="content">
                      <div class="row-fluid">
 					     <!-- breadcrumb -->
-					<?php $query = mysqli_query($conn,"select * from teacher_class_student
-					LEFT JOIN teacher_class ON teacher_class.teacher_class_id = teacher_class_student.teacher_class_id 
-					JOIN class ON class.class_id = teacher_class.class_id 
-					JOIN subject ON subject.subject_id = teacher_class.subject_id
+					<?php $query = mysqli_query($conn,"select * from lecturer_class_student
+					LEFT JOIN lecturer_class ON lecturer_class.lecturer_class_id = lecturer_class_student.lecturer_class_id 
+					JOIN class ON class.class_id = lecturer_class.class_id 
+					JOIN subject ON subject.subject_id = lecturer_class.subject_id
 					where student_id = '$session_id'
 					")or die(mysqli_error());
 					$row = mysqli_fetch_array($query);
-					$id = $row['teacher_class_student_id'];	
+					$id = $row['lecturer_class_student_id'];	
 					?>
 					     <ul class="breadcrumb">
 							<li><a href="#"><?php echo $row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $row['subject_code']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#">Semester: <?php echo $row['school_year']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#">Semester: <?php echo $row['term_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>My Classmates</b></a></li>
 						</ul>
 						
@@ -43,12 +43,12 @@
 
 							<?php								 
 								$my_student = mysqli_query($conn,"SELECT *
-								FROM teacher_class_student
-								LEFT JOIN student ON student.student_id = teacher_class_student.student_id
-								INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
+								FROM lecturer_class_student
+								LEFT JOIN student ON student.student_id = lecturer_class_student.student_id
+								INNER JOIN class ON class.class_id = student.class_id where lecturer_class_id = '$get_id' order by lastname ")or die(mysqli_error());
 																
 								while($row = mysqli_fetch_array($my_student)){
-								$id = $row['teacher_class_student_id']; }
+								$id = $row['lecturer_class_student_id']; }
 								?>
 							<tr>
 								<td width="30">

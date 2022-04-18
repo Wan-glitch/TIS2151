@@ -31,9 +31,9 @@
 										<tbody>
 											
                               		<?php
-										$query = mysqli_query($conn,"select * FROM assignment LEFT JOIN teacher ON teacher.teacher_id = assignment.teacher_id 
-																				  LEFT JOIN teacher_class ON teacher_class.teacher_class_id = assignment.class_id 
-																				  INNER JOIN class ON class.class_id = teacher_class.class_id  ")or die(mysqli_error());
+										$query = mysqli_query($conn,"select * FROM assignment LEFT JOIN lecturer ON lecturer.lecturer_id = assignment.lecturer_id 
+																				  LEFT JOIN lecturer_class ON lecturer_class.lecturer_class_id = assignment.class_id 
+																				  INNER JOIN class ON class.class_id = lecturer_class.class_id  ")or die(mysqli_error());
 										while($row = mysqli_fetch_array($query)){
 									?>
 							

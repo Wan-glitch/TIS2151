@@ -1,0 +1,18 @@
+1. User registration
+2. Project proposals management – proposals can be from both 
+supervisors and lecturers
+3. Student-to-project assignment by supervisor
+4. Project planning by the student, approval by supervisor
+5. Meeting management – appointment setting, meeting logs
+6. Goal setting and progress tracking
+7. Marksheet for end-of-trimester assessment
+
+
+Added	
+Supervisor
+
+
+
+
+
+

@@ -26,12 +26,31 @@
 						
                     <div class="announce_card" style="padding-left: 0px;padding-right: 0px;margin-bottom: 10px !important;">
                     	<div class="card-body">
-                        	<h6 class="card-title">Important Announcement for Teaching Evaluation Exe...</h6>
-                        	<p class="card-text"></p><p>Dear Student,</p>
+                        	<h4 class="card-title" style="text-align: center" >Announcement</h4>
+							<hr> </hr>
 
-							<p>Please be informed that the Teaching Evaluation for Trimester 2, 2021/2022 (2120) is now open...</p>
+							<?php
+
+								// $timezone = date_default_timezone_get();
+								// $announce_text_query = mysqli_query($conn,"select * from public_announce order by published desc")or die(mysqli_error());
+
+								//  $announce_text_query_row = mysqli_fetch_array($announce_text_query);
+								// if (($announce_text_query_row['published']) == $timezone)
+								// 	$announce_text = $announce_text_query_row['description'];
+
+								// else {
+								// 	echo $announce_text_query_row['description']; 
+							$announce_text_query = mysqli_query($conn,"select * from public_announce order by published DESC")or die(mysqli_error());
+							$announce_text_query_row = mysqli_fetch_array($announce_text_query);
+							$announce_text = $announce_text_query_row['description'];
+
+							echo $announce_text_query_row['description']; 
+
+							?>
+							<br>
+							<br>
 								
-                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!" data-toggle="modal" data-target="#modal18" style="background:#0750a4;">More Info</a>                            </div>
+                        <div class="card-footer"><a class="btn btn-primary btn-sm" href="#!" data-toggle="modal" data-target="#modal18" style="background:#0750a4;">More Info</a>                         </div>
                         </div>
 			</div> 
 		</div>

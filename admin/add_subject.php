@@ -36,7 +36,7 @@
 											</div>
 										</div>
 											<div class="control-group">
-											<label class="control-label" for="inputPassword">Semester</label>
+											<label class="control-label" for="inputPassword">Term</label>
 											<div class="controls">
 												<select name="semester">
 													<option></option>

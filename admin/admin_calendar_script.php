@@ -36,7 +36,7 @@
 			// US Holidays
 				 events:
 		[
-		<?php $event_query = mysqli_query($conn,"select * from event where teacher_class_id = '' ")or die(mysqli_error());
+		<?php $event_query = mysqli_query($conn,"select * from event where lecturer_class_id = '' ")or die(mysqli_error());
 			  while($event_row = mysqli_fetch_array($event_query)){
 		?>
         {

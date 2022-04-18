@@ -12,12 +12,12 @@
 									
 					     <ul class="breadcrumb">
 						<?php
-						$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());
-						$school_year_query_row = mysqli_fetch_array($school_year_query);
-						$school_year = $school_year_query_row['school_year'];
+						$term_year_query = mysqli_query($conn,"select * from term_year order by term_year DESC")or die(mysqli_error());
+						$term_year_query_row = mysqli_fetch_array($term_year_query);
+						$term_year = $term_year_query_row['term_year'];
 						?>
 							<li><a href="#"><b>My Class</b></a><span class="divider">/</span></li>
-							<li><a href="#">Semester: <?php echo $school_year_query_row['school_year']; ?></a></li>
+							<li><a href="#">Semester: <?php echo $term_year_query_row['term_year']; ?></a></li>
 						</ul>
 						 <!-- end breadcrumb -->
 					 
@@ -27,12 +27,12 @@
                         <div class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
-									<?php $query = mysqli_query($conn,"select * from teacher_class_student
-														LEFT JOIN teacher_class ON teacher_class.teacher_class_id = teacher_class_student.teacher_class_id 
-														LEFT JOIN class ON class.class_id = teacher_class.class_id 
-														LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-														LEFT JOIN teacher ON teacher.teacher_id = teacher_class.teacher_id
-														where student_id = '$session_id' and school_year = '$school_year'
+									<?php $query = mysqli_query($conn,"select * from lecturer_class_student
+														LEFT JOIN lecturer_class ON lecturer_class.lecturer_class_id = lecturer_class_student.lecturer_class_id 
+														LEFT JOIN class ON class.class_id = lecturer_class.class_id 
+														LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+														LEFT JOIN lecturer ON lecturer.lecturer_id = lecturer_class.lecturer_id
+														where student_id = '$session_id' and term_year = '$term_year'
 														")or die(mysqli_error());
 														$count = mysqli_num_rows($query);
 									?>
@@ -46,7 +46,7 @@
 													<?php
 														if ($count != '0'){
 														while($row = mysqli_fetch_array($query)){
-														$id = $row['teacher_class_id'];	
+														$id = $row['lecturer_class_id'];	
 													?>
 											<li>
 												<a href="my_classmates.php<?php echo '?id='.$id; ?>">

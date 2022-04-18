@@ -2,7 +2,7 @@
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('annoucement_link.php'); ?>
@@ -10,10 +10,10 @@
                      <div class="row-fluid">
 					  <!-- breadcrumb -->
 				
-										<?php $class_query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_class_id = '$get_id'")or die(mysqli_error());
+										<?php $class_query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_class_id = '$get_id'")or die(mysqli_error());
 										$class_row = mysqli_fetch_array($class_query);
 										?>
 				
@@ -41,8 +41,8 @@
 								<?php
 									if (isset($_POST['post'])){
 									$content = $_POST['content'];
-									mysqli_query($conn,"insert into teacher_class_announcements (teacher_class_id,teacher_id,content,date) values('$get_id','$session_id','$content',NOW())")or die(mysqli_error());
-									mysqli_query($conn,"insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','Add Annoucements',NOW(),'announcements_student.php')")or die(mysqli_error());
+									mysqli_query($conn,"insert into lecturer_class_announcements (lecturer_class_id,lecturer_id,content,date) values('$get_id','$session_id','$content',NOW())")or die(mysqli_error());
+									mysqli_query($conn,"insert into notification (lecturer_class_id,notification,date_of_notification,link) value('$get_id','Add Annoucements',NOW(),'announcements_student.php')")or die(mysqli_error());
 									?>
 									<script>
 									window.location = 'announcements.php<?php echo '?id='.$get_id; ?>';
@@ -67,11 +67,11 @@
                             <div class="block-content collapse in">
                                 <div class="span12">
 								 <?php
-								 $query_announcement = mysqli_query($conn,"select * from teacher_class_announcements
-																	where teacher_id = '$session_id'  and  teacher_class_id = '$get_id' order by date DESC
+								 $query_announcement = mysqli_query($conn,"select * from lecturer_class_announcements
+																	where lecturer_id = '$session_id'  and  lecturer_class_id = '$get_id' order by date DESC
 																	")or die(mysqli_error());
 								 while($row = mysqli_fetch_array($query_announcement)){
-								 $id = $row['teacher_class_announcements_id'];
+								 $id = $row['lecturer_class_announcements_id'];
 								 ?>
 											<div class="post"  id="del<?php echo $id; ?>">
 											<?php echo $row['content']; ?>

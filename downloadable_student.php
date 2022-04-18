@@ -10,19 +10,19 @@
                      <div class="row-fluid">
 					    <!-- breadcrumb -->
 				
-										<?php $class_query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_class_id = '$get_id'")or die(mysqli_error());
+										<?php $class_query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_class_id = '$get_id'")or die(mysqli_error());
 										$class_row = mysqli_fetch_array($class_query);
 										$class_id = $class_row['class_id'];
-										$school_year = $class_row['school_year'];
+										$term_year = $class_row['term_year'];
 										?>
 				
 					     <ul class="breadcrumb">
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#">Semester: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#">Semester: <?php echo $class_row['term_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>Downloadable Materials</b></a></li>
 						</ul>
 						 <!-- end breadcrumb -->
@@ -56,7 +56,6 @@
 								
 									<form action="copy_file_student.php" method="post">
 								
-									<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><i class="icon-copy"></i> Copy Check item to backpack</a>
 									
 									<?php include('copy_to_backpack_modal.php'); ?>
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">

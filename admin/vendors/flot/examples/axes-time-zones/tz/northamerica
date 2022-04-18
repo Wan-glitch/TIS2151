@@ -249,7 +249,7 @@ Zone	PST8PDT		 -8:00	US	P%sT
 #   States.
 #   (d) Right to Revert- Congress retains the right to revert the
 #   Daylight Saving Time back to the 2005 time schedules once the
-#   Department study is complete.
+#   Faculty study is complete.
 
 # US eastern time, represented by New York
 
@@ -443,7 +443,7 @@ Zone America/Los_Angeles -7:52:58 -	LMT	1883 Nov 18 12:07:02
 # Pacific Time.
 #
 # ...on September 22, 1980, DOT Secretary Neil E. Goldschmidt rescinded the
-# Department's September 1979 decision. Juneau and other communities in
+# Faculty's September 1979 decision. Juneau and other communities in
 # northern Southeast reverted to Pacific Time on October 26.
 #
 # On October 28 [1983]...the Metlakatla Indian Community Council voted
@@ -1345,7 +1345,7 @@ Zone America/Moncton	-4:19:08 -	LMT	1883 Dec  9
 # Matthews and Vincent (1998) also write that Quebec east of the -63
 # meridian is supposed to observe AST, but residents as far east as
 # Natashquan use EST/EDT, and residents east of Natashquan use AST.
-# In "Official time in Quebec" the Quebec department of justice writes in
+# In "Official time in Quebec" the Quebec faculty of justice writes in
 # http://www.justice.gouv.qc.ca/english/publications/generale/temps-regl-1-a.htm
 # that "The residents of the Municipality of the
 # Cote-Nord-du-Golfe-Saint-Laurent and the municipalities of Saint-Augustin,
@@ -1713,7 +1713,7 @@ Zone America/Winnipeg	-6:28:36 -	LMT	1887 Jul 16
 
 # From W. Jones (1992-11-06):
 # The. . .below is based on information I got from our law library, the
-# provincial archives, and the provincial Community Services department.
+# provincial archives, and the provincial Community Services faculty.
 # A precise history would require digging through newspaper archives, and
 # since you didn't say what you wanted, I didn't bother.
 #
@@ -2220,7 +2220,7 @@ Zone America/Dawson	-9:17:40 -	LMT	1900 Aug 20
 
 # From Jesper Norgaard, translating
 # <http://www.reforma.com/nacional/articulo/064327/> (2001-01-17):
-# In Oaxaca, the 55.000 teachers from the Section 22 of the National
+# In Oaxaca, the 55.000 lecturers from the Section 22 of the National
 # Syndicate of Education Workers, refuse to apply daylight saving each
 # year, so that the more than 10,000 schools work at normal hour the
 # whole year.
@@ -2245,7 +2245,7 @@ Zone America/Dawson	-9:17:40 -	LMT	1900 Aug 20
 # observation of Daylight Saving Time.
 
 # <a href="http://www.conae.gob.mx/ahorro/decretohorver2001.html#decre">
-# Official statute published by the Energy Department
+# Official statute published by the Energy Faculty
 # </a> (2001-02-01) shows Baja and Chihauhua as still using US DST rules,
 # and Sonora with no DST.  This was reported by Jesper Norgaard (2001-02-03).
 

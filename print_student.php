@@ -2,7 +2,7 @@
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('class_sidebar.php'); ?>
@@ -35,11 +35,11 @@
 										<tbody>
 											
 												<?php
-														$my_student = mysqli_query($conn,"SELECT * FROM teacher_class_student
-														LEFT JOIN student ON student.student_id = teacher_class_student.student_id 
-														INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
+														$my_student = mysqli_query($conn,"SELECT * FROM lecturer_class_student
+														LEFT JOIN student ON student.student_id = lecturer_class_student.student_id 
+														INNER JOIN class ON class.class_id = student.class_id where lecturer_class_id = '$get_id' order by lastname ")or die(mysqli_error());
 														while($row = mysqli_fetch_array($my_student)){
-														$id = $row['teacher_class_student_id'];
+														$id = $row['lecturer_class_student_id'];
 														?>                          
 										<tr id="del<?php echo $id; ?>">
 									

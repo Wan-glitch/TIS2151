@@ -10,23 +10,23 @@
 </style>
 
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('assignment_link.php'); ?>
                 <div class="span6" id="content">
                      <div class="row-fluid">
 					   <!-- breadcrumb -->
-										<?php $class_query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_class_id = '$get_id'")or die(mysqli_error());
+										<?php $class_query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_class_id = '$get_id'")or die(mysqli_error());
 										$class_row = mysqli_fetch_array($class_query);
 										?>
 					     <ul class="breadcrumb">
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#">Semester: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#">Semester: <?php echo $class_row['term_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>Uploaded Assignments</b></a></li>
 						</ul>
 						 <!-- end breadcrumb -->
@@ -49,7 +49,7 @@
 										<tbody>
 											
                               		<?php
-										$query = mysqli_query($conn,"select * FROM assignment where class_id = '$get_id' and teacher_id = '$session_id' order by fdatein DESC ")or die(mysqli_error());
+										$query = mysqli_query($conn,"select * FROM assignment where class_id = '$get_id' and lecturer_id = '$session_id' order by fdatein DESC ")or die(mysqli_error());
 										while($row = mysqli_fetch_array($query)){
 										$id  = $row['assignment_id'];
 										$floc  = $row['floc'];

@@ -51,9 +51,7 @@
                 </div>
             </div>
             <hr>
-            <footer>
-                <p>&copy; Vincent Gabriel 2013</p>
-            </footer>
+
         </div>
         <style>
         #external-events {

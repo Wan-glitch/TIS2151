@@ -12,17 +12,17 @@
 										  <p>Move To:</p>
 										  					<div class="control-group">
                                           <div class="controls">
-                                            <select name="teacher_class_id"  class="" required>
+                                            <select name="lecturer_class_id"  class="" required>
                                              	<option></option>
-																		<?php $query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_id = '$session_id' and school_year = '$school_year' ")or die(mysqli_error());	
+																		<?php $query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_id = '$session_id' and term_year = '$term_year' ")or die(mysqli_error());	
 										while($row = mysqli_fetch_array($query)){
-										$id = $row['teacher_class_id'];
+										$id = $row['lecturer_class_id'];
 										?>		
 									
-											<option value="<?php echo $row['teacher_class_id']; ?>">
+											<option value="<?php echo $row['lecturer_class_id']; ?>">
 
 											<?php echo $row['class_name']; ?> &nbsp;&nbsp;&nbsp;&nbsp; <?php echo $row['subject_code']; ?></option>
 									

@@ -111,7 +111,7 @@ body {
     background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.chmsc {
+.MMU {
     font-weight: bold;
     color: #555;
     font-size: 12px;
@@ -192,6 +192,9 @@ footer {
     color: #FFFFFF;
     font-weight: bold;
 }
+
+.card-title {
+   text-align: center;
 
 .motto {
     text-shadow: 1px 1px 5px rgb(124, 124, 124);

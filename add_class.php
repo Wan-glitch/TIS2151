@@ -43,10 +43,10 @@
 											<label>Semester:</label>
                                           <div class="controls">
 											<?php
-											$query = mysqli_query($conn,"select * from school_year order by school_year DESC");
+											$query = mysqli_query($conn,"select * from term_year order by term_year DESC");
 											$row = mysqli_fetch_array($query);
 											?>
-											<input id="" class="span5" type="text" class="" name="school_year" value="<?php  echo $row['school_year']; ?>" >
+											<input id="" class="span5" type="text" class="" name="term_year" value="<?php  echo $row['term_year']; ?>" >
                                           </div>
                                         </div>
 											<div class="control-group">
@@ -73,7 +73,7 @@
 						}else{
 							$.jGrowl("Classs Successfully  Added", { header: 'Class Added' });
 							var delay = 500;
-							setTimeout(function(){ window.location = 'dasboard_teacher.php'  }, delay);  
+							setTimeout(function(){ window.location = 'dasboard_lecturer.php'  }, delay);  
 						}
 						}
 					});

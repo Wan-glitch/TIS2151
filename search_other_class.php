@@ -9,14 +9,14 @@
 										<div class="control-group">
 											<label>Semester:</label>
                                           <div class="controls">
-                                            <select name="school_year"  class="span8" required>
+                                            <select name="term_year"  class="span8" required>
                                              	<option></option>
 											<?php
-											$query = mysqli_query($conn,"select * from school_year order by school_year DESC");
+											$query = mysqli_query($conn,"select * from term_year order by term_year DESC");
 											while($row = mysqli_fetch_array($query)){
 											
 											?>
-											<option><?php echo $row['school_year']; ?></option>
+											<option><?php echo $row['term_year']; ?></option>
 											<?php } ?>
                                             </select>
                                           </div>

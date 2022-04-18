@@ -5,7 +5,7 @@
 		<h3 id="myModalLabel">Change Avatar</h3>
 	</div>
 		<div class="modal-body">
-					<form method="post" action="teacher_avatar.php" enctype="multipart/form-data">
+					<form method="post" action="lecturer_avatar.php" enctype="multipart/form-data">
 							<center>	
 								<div class="control-group">
 								<div class="controls">

@@ -11,13 +11,13 @@
                             <a href="admin_user.php"><i class="icon-chevron-right"></i><i class="icon-user"></i> Admin Users</a>
                         </li>
 						<li>
-                            <a href="department.php"><i class="icon-chevron-right"></i><i class="icon-building"></i> Department</a>
+                            <a href="faculty.php"><i class="icon-chevron-right"></i><i class="icon-building"></i> Faculty</a>
                         </li>
 						<li>
                             <a href="students.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Students</a>
                         </li>
 						<li>
-                            <a href="teachers.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> Teachers</a>
+                            <a href="lecturers.php"><i class="icon-chevron-right"></i><i class="icon-group"></i> lecturers</a>
                         </li>
 						<li>
                             <a href="downloadable.php"><i class="icon-chevron-right"></i><i class="icon-download"></i> Downloadable Materials</a>
@@ -33,7 +33,7 @@
                             <a href="activity_log.php"><i class="icon-chevron-right"></i><i class="icon-file"></i> Activity Log</a>
                         </li>
 						<li>
-                            <a href="school_year.php"><i class="icon-chevron-right"></i><i class="icon-calendar"></i> School Year</a>
+                            <a href="term_year.php"><i class="icon-chevron-right"></i><i class="icon-calendar"></i> Term</a>
                         </li>
 						<li class="active">
                             <a href="calendar_of_events.php"><i class="icon-chevron-right"></i><i class="icon-calendar"></i>Calendar of Events</a>

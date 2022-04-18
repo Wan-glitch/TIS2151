@@ -450,7 +450,7 @@ Zone	Asia/Urumqi	5:50:20	-	LMT	1928 # or Urumchi
 # > 500 million yuan
 # >
 # > (Reporter Dong Liu) the day before 20:20 or so (Urumqi Time 18:20),
-# > Urumqi City Department of International Plaza Luther Qiantang River
+# > Urumqi City Faculty of International Plaza Luther Qiantang River
 # > burst fire. As of yesterday, 18:30, Urumqi City Fire officers and men
 # > have worked continuously for 22 hours...
 
@@ -1315,7 +1315,7 @@ Zone	Asia/Tokyo	9:18:59	-	LMT	1887 Dec 31 15:00u
 # Winter time starts today Thursday, 30 September. Clocks will be turned back
 # by one hour.  This is the latest government decision and it's final!
 # The decision was taken because of the increase in working hours in
-# government's departments from six to seven hours.
+# government's facultys from six to seven hours.
 #
 # From Paul Eggert (2005-11-22):
 # Starting 2003 transitions are from Steffen Thorsen's web site timeanddate.com.
@@ -2344,7 +2344,7 @@ Zone	Asia/Hebron	2:20:23	-	LMT	1900 Oct
 # The rest of the data are from Shanks & Pottenger.
 
 # From Paul Eggert (2006-04-25):
-# Tomorrow's Manila Standard reports that the Philippines Department of
+# Tomorrow's Manila Standard reports that the Philippines Faculty of
 # Trade and Industry is considering adopting DST this June when the
 # rainy season begins.  See
 # <http://www.manilastandardtoday.com/?page=politics02_april26_2006>.
@@ -2439,7 +2439,7 @@ Zone	Asia/Singapore	6:55:25 -	LMT	1901 Jan  1
 # mentioning it as simply changing Sri Lanka Standard Time or Sri Lanka
 # Time and no mention was made about the abbreviation.
 #
-# If we look at Sri Lanka Department of Government's "Official News
+# If we look at Sri Lanka Faculty of Government's "Official News
 # Website of Sri Lanka" ... http://www.news.lk/ we can see that they
 # use SLT as abbreviation in time stamp at the beginning of each news
 # item....

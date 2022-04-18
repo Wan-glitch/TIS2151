@@ -2,21 +2,21 @@
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
 <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-				<?php include('quiz_sidebar_teacher.php'); ?>
+				<?php include('quiz_sidebar_lecturer.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
 					    <!-- breadcrumb -->	
 									<ul class="breadcrumb">
 										<?php
-										$school_year_query = mysqli_query($conn,"select * from school_year order by school_year DESC")or die(mysqli_error());
-										$school_year_query_row = mysqli_fetch_array($school_year_query);
-										$school_year = $school_year_query_row['school_year'];
+										$term_year_query = mysqli_query($conn,"select * from term_year order by term_year DESC")or die(mysqli_error());
+										$term_year_query_row = mysqli_fetch_array($term_year_query);
+										$term_year = $term_year_query_row['term_year'];
 										?>
 										<li><a href="#"><b>My Class</b></a><span class="divider">/</span></li>
-										<li><a href="#">Semester: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
+										<li><a href="#">Semester: <?php echo $term_year_query_row['term_year']; ?></a><span class="divider">/</span></li>
 										<li><a href="#"><b>Quiz Question</b></a></li>
 									</ul>
 						 <!-- end breadcrumb -->

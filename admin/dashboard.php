@@ -20,26 +20,26 @@
 							        <div class="span12">
 						
 									<?php 
-								$query_reg_teacher = mysqli_query($conn,"select * from teacher where teacher_status = 'Registered' ")or die(mysqli_error());
-								$count_reg_teacher = mysqli_num_rows($query_reg_teacher);
+								$query_reg_lecturer = mysqli_query($conn,"select * from lecturer where lecturer_status = 'Registered' ")or die(mysqli_error());
+								$count_reg_lecturer = mysqli_num_rows($query_reg_lecturer);
 								?>
 								
                                 <div class="span3">
-                                    <div class="chart" data-percent="<?php echo $count_reg_teacher; ?>"><?php echo $count_reg_teacher; ?></div>
-                                    <div class="chart-bottom-heading"><strong>Registered Teacher</strong>
+                                    <div class="chart" data-percent="<?php echo $count_reg_lecturer; ?>"><?php echo $count_reg_lecturer; ?></div>
+                                    <div class="chart-bottom-heading"><strong>Registered Lecturer</strong>
 
                                     </div>
                                 </div>
 								
 								<?php 
-								$query_teacher = mysqli_query($conn,"select * from teacher")or die(mysqli_error());
-								$count_teacher = mysqli_num_rows($query_teacher);
+								$query_lecturer = mysqli_query($conn,"select * from lecturer")or die(mysqli_error());
+								$count_lecturer = mysqli_num_rows($query_lecturer);
 								?>
 								
 								
                                 <div class="span3">
-                                    <div class="chart" data-percent="<?php echo $count_teacher; ?>"><?php echo $count_teacher ?></div>
-                                    <div class="chart-bottom-heading"><strong>Teachers</strong>
+                                    <div class="chart" data-percent="<?php echo $count_lecturer; ?>"><?php echo $count_lecturer ?></div>
+                                    <div class="chart-bottom-heading"><strong>lecturers</strong>
 
                                     </div>
                                 </div>

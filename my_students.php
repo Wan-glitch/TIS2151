@@ -2,7 +2,7 @@
 <?php include('session.php'); ?>
 <?php $get_id = $_GET['id']; ?>
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('class_sidebar.php'); ?>
@@ -18,9 +18,9 @@
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
 								<?php 
-								$my_student = mysqli_query($conn,"SELECT * FROM teacher_class_student
-														LEFT JOIN student ON student.student_id = teacher_class_student.student_id 
-														INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
+								$my_student = mysqli_query($conn,"SELECT * FROM lecturer_class_student
+														LEFT JOIN student ON student.student_id = lecturer_class_student.student_id 
+														INNER JOIN class ON class.class_id = student.class_id where lecturer_class_id = '$get_id' order by lastname ")or die(mysqli_error());
 								$count_my_student = mysqli_num_rows($my_student);?>
 								Number of Students: <span class="badge badge-info"><?php echo $count_my_student; ?></span>
 								</div>
@@ -29,14 +29,14 @@
                                 <div class="span12">
 									<ul	 id="da-thumbs" class="da-thumbs">
 										    <?php
-														$my_student = mysqli_query($conn,"SELECT * FROM teacher_class_student
-														LEFT JOIN student ON student.student_id = teacher_class_student.student_id 
-														INNER JOIN class ON class.class_id = student.class_id where teacher_class_id = '$get_id' order by lastname ")or die(mysqli_error());
+														$my_student = mysqli_query($conn,"SELECT * FROM lecturer_class_student
+														LEFT JOIN student ON student.student_id = lecturer_class_student.student_id 
+														INNER JOIN class ON class.class_id = student.class_id where lecturer_class_id = '$get_id' order by lastname ")or die(mysqli_error());
 														while($row = mysqli_fetch_array($my_student)){
-														$id = $row['teacher_class_student_id'];
+														$id = $row['lecturer_class_student_id'];
 														?>
 											<li id="del<?php echo $id; ?>">
-
+													<p class="class"><?php echo $row['username'];?></p>
 													<p class="class"><?php echo $row['lastname'];?></p>
 													<p class="subject"><?php echo $row['firstname']; ?></p>
 													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Remove</a>	

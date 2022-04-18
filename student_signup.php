@@ -7,7 +7,7 @@ $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $class_id = $_POST['class_id'];
 
-$query = mysqli_query($conn,"select * from student where username='$username' and firstname='$firstname' and lastname='$lastname' and class_id = '$class_id'")or die(mysqli_error());
+$query = mysqli_query($conn,"select * from student where username='$username' and firstname='$firstname' and lastname='$lastname'")or die(mysqli_error());
 $row = mysqli_fetch_array($query);
 $id = $row['student_id'];
 

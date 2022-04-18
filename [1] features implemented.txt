@@ -1,7 +1,0 @@
-1. User registration                                                                        Done
-2. Project proposals management – proposals can be from both supervisors and lecturers      Done     
-3. Student-to-project assignment by supervisor                                              Done
-4. Project planning by the student, approval by supervisor                                  Implementing (0)
-5. Meeting management – appointment setting, meeting logs                                   Done
-6. Goal setting and progress tracking                                                       Implementing (0)
-7. Marksheet for end-of-trimester assessment                                                Implementing (60% finished)

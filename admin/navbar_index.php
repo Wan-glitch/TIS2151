@@ -5,7 +5,7 @@
                      <span class="icon-bar"></span>
                      <span class="icon-bar"></span>
                     </a>
-                    <a class="brand" href="#">Learning Management System</a>
+                    <a class="brand" href="#">FYP Management and Monitoring</a>
                     <div class="nav-collapse collapse">
                  
                     </div>

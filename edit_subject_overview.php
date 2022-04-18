@@ -3,7 +3,7 @@
 <?php $get_id = $_GET['id']; ?>
 <?php $subject_id = $_GET['subject_id']; ?>
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
 				<?php include('subject_overview_link.php'); ?>
@@ -11,10 +11,10 @@
                      <div class="row-fluid">
 					  <!-- breadcrumb -->
 				
-										<?php $class_query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_class_id = '$get_id'")or die(mysqli_error());
+										<?php $class_query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_class_id = '$get_id'")or die(mysqli_error());
 										$class_row = mysqli_fetch_array($class_query);
 										?>
 				

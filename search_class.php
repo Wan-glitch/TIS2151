@@ -1,10 +1,10 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('session.php'); ?>
     <body>
-		<?php include('navbar_teacher.php'); ?>
+		<?php include('navbar_lecturer.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-				<?php include('teacher_sidebar.php'); ?>
+				<?php include('lecturer_sidebar.php'); ?>
                 <div class="span6" id="content">
                      <div class="row-fluid">
 					    <!-- breadcrumb -->
@@ -12,14 +12,14 @@
 									
 					     <ul class="breadcrumb">
 						<?php
-						$sy = $_POST['school_year'];
+						$sy = $_POST['term_year'];
 						
-						$school_year_query = mysqli_query($conn,"select * from school_year where  school_year = '$sy'")or die(mysqli_error());
-						$school_year_query_row = mysqli_fetch_array($school_year_query);
-						$school_year = $school_year_query_row['school_year'];
+						$term_year_query = mysqli_query($conn,"select * from term_year where  term_year = '$sy'")or die(mysqli_error());
+						$term_year_query_row = mysqli_fetch_array($term_year_query);
+						$term_year = $term_year_query_row['term_year'];
 						?>
 							<li><a href="#"><b>My Class</b></a><span class="divider">/</span></li>
-							<li><a href="#"><?php echo $school_year_query_row['school_year']; ?></a></li>
+							<li><a href="#"><?php echo $term_year_query_row['term_year']; ?></a></li>
 						</ul>
 						 <!-- end breadcrumb -->
 					 
@@ -32,12 +32,12 @@
                                 <div class="span12">
 								
   										<ul	 id="da-thumbs" class="da-thumbs">
-										<?php $query = mysqli_query($conn,"select * from teacher_class
-										LEFT JOIN class ON class.class_id = teacher_class.class_id
-										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
-										where teacher_id = '$session_id' and school_year = '$school_year' ")or die(mysqli_error());
+										<?php $query = mysqli_query($conn,"select * from lecturer_class
+										LEFT JOIN class ON class.class_id = lecturer_class.class_id
+										LEFT JOIN subject ON subject.subject_id = lecturer_class.subject_id
+										where lecturer_id = '$session_id' and term_year = '$term_year' ")or die(mysqli_error());
 										while($row = mysqli_fetch_array($query)){
-										$id = $row['teacher_class_id'];
+										$id = $row['lecturer_class_id'];
 				
 										?>
 											<li>
@@ -69,7 +69,7 @@
 
 
                 </div>
-				<?php include('teacher_right_sidebar.php') ?>
+				<?php include('lecturer_right_sidebar.php') ?>
             </div>
 		<?php include('footer.php'); ?>
         </div>

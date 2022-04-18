@@ -34,7 +34,7 @@ jQuery(document).ready(function() {
                     });
                     var delay = 1000;
                     setTimeout(function() {
-                        window.location = 'dasboard_teacher.php'
+                        window.location = 'dasboard_lecturer.php'
                     }, delay);
                 } 
                 else if (html == 'true_supervisor') {
@@ -74,8 +74,8 @@ jQuery(document).ready(function() {
 			        onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-info"
 			        type="submit">Student</button>
 			    <div class="pull-right">
-			        <button data-placement="top" title="Register as Teacher" id="signup_teacher"
-			            onclick="window.location='signup_teacher.php'" name="login" class="btn btn-info" type="submit">Teacher</button>
+			        <button data-placement="top" title="Register as Lecturer" id="signup_lecturer"
+			            onclick="window.location='signup_lecturer.php'" name="login" class="btn btn-info" type="submit">Lecturer</button>
 			    </div>
 			</div>
 			<script type="text/javascript">
@@ -86,7 +86,7 @@ $(document).ready(function() {
 			</script>
 			<script type="text/javascript">
 $(document).ready(function() {
-    $('#signup_teacher').tooltip('show');
-    $('#signup_teacher').tooltip('hide');
+    $('#signup_lecturer').tooltip('show');
+    $('#signup_lecturer').tooltip('hide');
 });
 			</script>

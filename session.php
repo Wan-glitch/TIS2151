@@ -1,4 +1,4 @@
-include('admin/dbcon.php');
+
 <?php
 //Start session
 session_start();
